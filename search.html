@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Puzzle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('search_background.jpg'); /* Updated background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .title-block, .input-block {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      padding: 10px 20px; /* Add padding to the block */
+      border-radius: 10px; /* Add border-radius for rounded corners */
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+      margin-bottom: 20px; /* Add margin-bottom for separation */
+    }
+    h2 {
+      font-size: 36px;
+      color: black; /* Updated title color to black */
+      margin: 0; /* Remove margin to align with the block */
+    }
+    form {
+      margin-top: 20px; /* Add margin-top for separation from the title */
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: black; /* Black text */
+      font-weight: bold; /* Bold label text */
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="title-block"> <!-- Enclosing "Search Puzzle" in a block -->
+    <h2>Search Puzzle</h2>
+  </div>
+  <form action="singlepuzzleview.html" method="post">
+    <div class="input-block"> <!-- Enclosing input fields in a block -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+    </div>
+    <div class="input-block"> <!-- Enclosing input fields in a block -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+    </div>
+    <div class="input-block"> <!-- Enclosing input fields in a block -->
+      <label for="search_id">Search Puzzle ID:</label><br>
+      <input type="text" id="search_id" name="search_id"><br><br>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Quail Map View</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* Light gray background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; /* Center items vertically */
+      position: relative; /* Position the list link relative to the body */
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .list-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .image-container {
+      max-width: 80%;
+      position: relative;
+      z-index: 1; /* Ensure the image is above the list link */
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">California Quail Map View</h1>
+  <a href="SinglePuzzleView.html" class="list-link">List View</a>
+  <div class="image-container">
+    <!-- Replace 'CaliforniaQuailMapView.jpg' with the path to your image -->
+    <img src="CaliforniaQuailMapView.jpg" alt="California Quail Map View">
+  </div>
+</body>
+</html>

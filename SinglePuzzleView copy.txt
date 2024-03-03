@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Quail</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* Light gray background */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative; /* Make container position relative */
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .map-button {
+      position: absolute;
+      top: 60px; /* Adjust the top position */
+      right: 20px; /* Adjust the right position */
+    }
+    .segment {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; /* Make segments position relative */
+    }
+    .segment img {
+      max-width: 40%; /* Set max width of images */
+      height: auto;
+      display: inline-block; /* Display images inline-block */
+      margin-right: 10px; /* Add margin between images */
+      border-radius: 5px;
+    }
+    .date {
+      position: absolute; /* Position dates absolutely */
+      top: 10px; /* Adjust the position */
+      right: 10px; /* Adjust the position */
+      font-size: 24px; /* Same text size as segment titles */
+    }
+    .creator {
+      text-decoration: underline; /* Underline the creator's name */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>California Quail</h1>
+    <a href="CaliforniaQuailMapView.html" class="map-button">Map View</a>
+    <div class="segment">
+      <h3>Zach in San Francisco, CA <span class="date">March 1, 2024</span></h3>
+      <div class="image-container">
+        <img src="zachcaliforniaquail.jpeg" alt="Segment 1 Placeholder">
+        <img src="ZachCaliforniaQuail_IP1.jpg" alt="Segment 1 Placeholder">
+      </div>
+    </div>
+    <div class="segment">
+      <h3>Nina, Tom, Ashley and Jamie in San Jose, CA <span class="date">October 15, 2023</span></h3>
+      <div class="image-container">
+        <img src="4teamcaliforniaquail.jpg" alt="Segment 2 Placeholder">
+        <img src="4teamcaliforniaquail2.jpg" alt="Segment 2 Placeholder">
+      </div>
+    </div>
+    <div class="segment">
+      <h3>California Quail Passport Created by <span class="creator">BigTimePuzzler</span> on June 6, 2023</h3>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Puzzle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('register_background.jpg'); /* Replace 'register_background.jpg' with the path to your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    h2 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for emphasis */
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: black; /* Black text */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="button"],
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="button"]:hover,
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Register Puzzle</h2>
+  <form action="register_result.html" method="post">
+    <label for="puzzle_title">Puzzle Title:</label>
+    <input type="text" id="puzzle_title" name="puzzle_title"><br>
+    <label for="puzzle_image">Submit Picture of Puzzle:</label>
+    <input type="file" id="puzzle_image" name="puzzle_image"><br>
+    <label for="generate_id">Generate Unique 6 Digit ID:</label>
+    <input type="button" value="Generate ID" onclick="generateId()"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function generateId() {
+      // Generate and display a unique 6 digit ID
+      var id = Math.floor(100000 + Math.random() * 900000);
+      alert("Generated ID: " + id);
+    }
+  </script>
+</body>
+</html>
